@@ -18,4 +18,10 @@ public class Computer {
     public void checkPowerUsage(){
 
     }
+
+    public void checkSomething(){
+        if(cpu != null && cpu.getPower() < 0){ // && vs &
+            System.out.println("a");
+        }
+    }
 }

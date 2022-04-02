@@ -16,6 +16,9 @@ public class Simulation {
 
         computer.checkComputerParts();
         computer.checkPowerUsage();
+
+        //& vs &&, | vs ||
+        //computer.checkSomething();
     }
 
 }

@@ -11,7 +11,7 @@ public class World {
         while (true) {
             try {
                 superWorld.run();
-            } catch (NewPandemicException ala) {
+            } catch (NewPandemicException ala) { // two catches in one try, collapse catches
                 System.out.println("Oh now, again: " + ala.getClass().getSimpleName() + " name of disease: " + ala.getPandemicName());
                 //e.printStackTrace();
                 //e.printStackTrace(System.out);
