@@ -1,5 +1,6 @@
 package com.codecool.exceptionscodecool;
 
+import com.codecool.exceptionscodecool.exception.ComputerNotCompleteException;
 import com.codecool.exceptionscodecool.model.CPU;
 import com.codecool.exceptionscodecool.model.Computer;
 import com.codecool.exceptionscodecool.model.PowerSupply;
@@ -14,7 +15,11 @@ public class Simulation {
 
         Computer computer = new Computer(cpu, ram, powerSupply);
 
-        computer.checkComputerParts();
+        try {
+            computer.checkComputerParts();
+        } catch (ComputerNotCompleteException e) {
+            e.printStackTrace();
+        }
         computer.checkPowerUsage();
 
         //& vs &&, | vs ||
